@@ -29,18 +29,24 @@ public class PlayerMovement : MonoBehaviour
     }
 
 
-    public  void MoveLeft()
+    public  void MoveLeft(InputAction.CallbackContext context)
     {
-        
+
+        Debug.Log("leftinital");
+        if (context.performed)
+        {
 
             StartCoroutine(IMoveLeft());
+        }
         
     }
-    public void MoveRight()
+    public void MoveRight(InputAction.CallbackContext context)
     {
-       
-           
+        if (context.performed)
+        {
+
             StartCoroutine(IMoveRight());
+        }
         
     }
    public void SpecialAction(InputAction.CallbackContext context)
@@ -54,7 +60,7 @@ public class PlayerMovement : MonoBehaviour
     IEnumerator IMoveLeft()
     {
 
-        while (right.IsPressed())
+        while (left.IsPressed())
         {
             Debug.Log("left");
             _playerRig.velocity = Vector2.left * Time.deltaTime * 100;
@@ -68,7 +74,6 @@ public class PlayerMovement : MonoBehaviour
 
         while (right.IsPressed())
         {
-            Debug.Log("right");
             _playerRig.velocity = Vector2.right * Time.deltaTime*100;
               yield return new WaitForSeconds(0.1f);
         }
