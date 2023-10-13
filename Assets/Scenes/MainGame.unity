@@ -8964,7 +8964,6 @@ GameObject:
   - component: {fileID: 1430610096}
   - component: {fileID: 1430610095}
   - component: {fileID: 1430610097}
-  - component: {fileID: 1430610098}
   - component: {fileID: 1430610099}
   m_Layer: 0
   m_Name: Player
@@ -9212,21 +9211,6 @@ SpringJoint2D:
   m_Distance: 1.3436387
   m_DampingRatio: 1
   m_Frequency: 1
---- !u!114 &1430610098
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1430610090}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 092c8bf98018ffb4cbe3ad79cb455e95, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  heldOrbs: 0
-  maxOrbs: 6
-  questionManager: {fileID: 0}
 --- !u!114 &1430610099
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9241,7 +9225,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   heldOrbs: 0
   maxOrbs: 6
-  questionManager: {fileID: 0}
+  currentQuestion: 0
+  questionManager: {fileID: 1996153091}
+  player: {fileID: 1430610090}
 --- !u!1 &1451786728
 GameObject:
   m_ObjectHideFlags: 0
@@ -13569,6 +13555,8 @@ MonoBehaviour:
   - {fileID: 1573486756}
   - {fileID: 948436040}
   - {fileID: 1342841008}
+  player: {fileID: 1430610090}
+  playerOrbTally: {fileID: 1430610099}
 --- !u!4 &1996153092
 Transform:
   m_ObjectHideFlags: 0
