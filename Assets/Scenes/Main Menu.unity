@@ -401,7 +401,7 @@ GameObject:
   - component: {fileID: 870928825}
   - component: {fileID: 870928824}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: Main Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -557,8 +557,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Learn
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: fb676f53c2ba4ae449ca50dc7583d133, type: 2}
+  m_sharedMaterial: {fileID: -1134105317466146066, guid: fb676f53c2ba4ae449ca50dc7583d133, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1138,8 +1138,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: About
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: fb676f53c2ba4ae449ca50dc7583d133, type: 2}
+  m_sharedMaterial: {fileID: -1134105317466146066, guid: fb676f53c2ba4ae449ca50dc7583d133, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1282,8 +1282,8 @@ MonoBehaviour:
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
-    m_HighlightedSprite: {fileID: 21300000, guid: 1f9e50a696746bd4aae554057ee2ae34, type: 3}
-    m_PressedSprite: {fileID: 21300000, guid: 87be27b247e4ae04da33cd3e77e3d99f, type: 3}
+    m_HighlightedSprite: {fileID: 21300000, guid: c1f473fa88199d841832bf9e98c4d435, type: 3}
+    m_PressedSprite: {fileID: 21300000, guid: 09c69f1c226e6de4989ac345622fa603, type: 3}
     m_SelectedSprite: {fileID: 0}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
@@ -1317,7 +1317,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 6124b04e5f3c666478473012484aa120, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c1f473fa88199d841832bf9e98c4d435, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1386,7 +1386,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.75, b: 0.7566762, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1473,8 +1473,8 @@ MonoBehaviour:
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: eb698cbc0bb019447b8199953234a92b, type: 2}
+  m_sharedMaterial: {fileID: -75995541668444200, guid: eb698cbc0bb019447b8199953234a92b, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
