@@ -1864,6 +1864,7 @@ RectTransform:
   m_Father: {fileID: 615458247}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 313, y: -163.52249}
@@ -11190,3 +11191,5 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2128783148}
   m_CullTransparentMesh: 1
+=======
+>>>>>>> parent of 70c7805 (Merge pull request #20 from JoshuaMiller-Pio/adawdawdawdawdawdawdawdaw)
