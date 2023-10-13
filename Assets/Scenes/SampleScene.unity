@@ -210,7 +210,8 @@ GameObject:
   - component: {fileID: 119767784}
   - component: {fileID: 119767783}
   - component: {fileID: 119767785}
-  m_Layer: 0
+  - component: {fileID: 119767786}
+  m_Layer: 9
   m_Name: Wall
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -255,8 +256,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 186249797
-  m_SortingLayer: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -329,6 +330,33 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!50 &119767786
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 119767782}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
 --- !u!1 &182825057
 GameObject:
   m_ObjectHideFlags: 0
@@ -698,22 +726,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   grappleRope: {fileID: 1546190016}
-  grappleToAll: 1
-  grappableLayerNumber: 1
+  grappleToAll: 0
+  grappableLayerNumber: 9
   m_camera: {fileID: 519420031}
   gunHolder: {fileID: 1430610094}
   gunPivot: {fileID: 908547783}
   firePoint: {fileID: 182825058}
   m_springJoint2D: {fileID: 1430610097}
   m_rigidbody: {fileID: 1430610092}
-  rotateOverTime: 1
+  rotateOverTime: 0
   rotationSpeed: 4
   hasMaxDistance: 0
   maxDistnace: 20
   launchToPoint: 1
-  launchType: 1
+  launchType: 0
   launchSpeed: 1
-  autoConfigureDistance: 0
+  autoConfigureDistance: 1
   targetDistance: 3
   targetFrequncy: 1
   grapplePoint: {x: 0, y: 0}
@@ -1145,8 +1173,8 @@ MonoBehaviour:
       inWeight: 0
       outWeight: 0
     - serializedVersion: 3
-      time: 0.18283409
-      value: 0.5048264
+      time: 0.15365496
+      value: 0.4953959
       inSlope: 1.4490328
       outSlope: 1.4490328
       tangentMode: 0
@@ -1154,8 +1182,35 @@ MonoBehaviour:
       inWeight: 0.33333334
       outWeight: 0.33333334
     - serializedVersion: 3
+      time: 0.39243323
+      value: 0.40403053
+      inSlope: 1.7746084
+      outSlope: 1.7746084
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.42762056
+      value: 0.628952
+      inSlope: 2.8420448
+      outSlope: 2.8420448
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.8877931
+      value: 0.7491886
+      inSlope: 1.7521662
+      outSlope: 1.7521662
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
       time: 1
-      value: 1
+      value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
