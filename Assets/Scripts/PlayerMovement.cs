@@ -63,8 +63,8 @@ public class PlayerMovement : MonoBehaviour
         while (left.IsPressed())
         {
             Debug.Log("left");
-            _playerRig.velocity = Vector2.left * Time.deltaTime * 100;
-            yield return new WaitForSeconds(0.1f);
+            _playerRig.velocity = new Vector2(-1 * Time.deltaTime * 100, _playerRig.velocity.y) ;
+            yield return new WaitForSeconds(0.01f);
         }
 
         yield return null;
@@ -74,8 +74,8 @@ public class PlayerMovement : MonoBehaviour
 
         while (right.IsPressed())
         {
-            _playerRig.velocity = Vector2.right * Time.deltaTime*100;
-              yield return new WaitForSeconds(0.1f);
+            _playerRig.velocity = new Vector2(1 * Time.deltaTime * 100, _playerRig.velocity.y) ;
+            yield return new WaitForSeconds(0.01f);
         }
 
         yield return null;
