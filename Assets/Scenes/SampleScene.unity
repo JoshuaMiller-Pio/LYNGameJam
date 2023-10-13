@@ -800,7 +800,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 10
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 10
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -976,10 +976,8 @@ SpringJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: -6.363284, y: -1.9989371}
   m_AutoConfigureDistance: 1
-
-  m_Distance: 7.884009
-
-  m_DampingRatio: 1
+  m_Distance: 3.7600408
+  m_DampingRatio: 0
   m_Frequency: 1
 --- !u!1 &1546190013
 GameObject:
