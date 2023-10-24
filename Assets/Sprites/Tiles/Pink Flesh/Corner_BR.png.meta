@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Sprites/Tiles/Pink Flesh/Corner_BR.png.meta
 guid: 05e837e0b1c9c09468b23240ef2ed411
+========
+guid: 0763ed6d8576e3c45838c70eb5b11404
+>>>>>>>> a38750e (Added Tileset Assets):Assets/Sprites/Tiles/Pink Flesh/Center.png.meta
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
