@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: ea033ebcb89cc8a489cba98f29cec47a
+guid: badd7f73fdd4ac74a90262c9d018cf22
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -119,7 +119,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Purple Flesh Tiles_0
+      name: Pink Flesh Tiles_0
       rect:
         serializedVersion: 2
         x: 0
@@ -133,14 +133,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3ee55ddf65b2b84469e7264785f30df9
-      internalID: -470796713
+      spriteID: 0635215d5848c6442b219159733b5c2a
+      internalID: 241071424
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Purple Flesh Tiles_1
+      name: Pink Flesh Tiles_1
       rect:
         serializedVersion: 2
         x: 500
@@ -154,14 +154,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7d3b9c0713d3ff844a1f87d2e165ce14
-      internalID: -907405664
+      spriteID: 599996a1de45b7647a8aee7954464e27
+      internalID: 810092458
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Purple Flesh Tiles_2
+      name: Pink Flesh Tiles_2
       rect:
         serializedVersion: 2
         x: 1000
@@ -175,14 +175,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f17a870e686dec84088d901e16df75bd
-      internalID: -1804311108
+      spriteID: a8ed586e711a5bf44904c910c51e39b5
+      internalID: 1823231389
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Purple Flesh Tiles_3
+      name: Pink Flesh Tiles_3
       rect:
         serializedVersion: 2
         x: 0
@@ -196,14 +196,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f7b89073d8bc74d49ab7a927741db4a7
-      internalID: 1101959236
+      spriteID: 25a74a9c94de4ff498d3c7906ef9ee8b
+      internalID: -721898928
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Purple Flesh Tiles_4
+      name: Pink Flesh Tiles_4
       rect:
         serializedVersion: 2
         x: 500
@@ -217,14 +217,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2e8967737c01d154ab27d25caee829bb
-      internalID: -2089744595
+      spriteID: 39aac08e00f90f54196cf381b9fd3e14
+      internalID: -1901246903
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Purple Flesh Tiles_5
+      name: Pink Flesh Tiles_5
       rect:
         serializedVersion: 2
         x: 1000
@@ -238,14 +238,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 30199a37cf529c9408f9e17e3e63efc3
-      internalID: 1226263152
+      spriteID: e919226dca15e264d9eea26b796c345d
+      internalID: -514398428
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Purple Flesh Tiles_6
+      name: Pink Flesh Tiles_6
       rect:
         serializedVersion: 2
         x: 0
@@ -259,14 +259,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0fe3b06c1b719374b8234abb4077e34b
-      internalID: 11715018
+      spriteID: f0242810b42e3a145a0a8e387c0bb16f
+      internalID: -687950802
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Purple Flesh Tiles_7
+      name: Pink Flesh Tiles_7
       rect:
         serializedVersion: 2
         x: 500
@@ -280,14 +280,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ba8bdcefd4074d841b6de312689120cf
-      internalID: 358234057
+      spriteID: 4764b9e01c520a843937f908bbd4a018
+      internalID: 2017710321
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Purple Flesh Tiles_8
+      name: Pink Flesh Tiles_8
       rect:
         serializedVersion: 2
         x: 1000
@@ -301,8 +301,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5c7f67803c3bd4542bb143d3441a4217
-      internalID: 1707036812
+      spriteID: 909627f2c5502e84586a85591a588d7c
+      internalID: -651124751
       vertices: []
       indices: 
       edges: []
@@ -318,15 +318,15 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Purple Flesh Tiles_5: 1226263152
-      Purple Flesh Tiles_8: 1707036812
-      Purple Flesh Tiles_0: -470796713
-      Purple Flesh Tiles_1: -907405664
-      Purple Flesh Tiles_2: -1804311108
-      Purple Flesh Tiles_7: 358234057
-      Purple Flesh Tiles_4: -2089744595
-      Purple Flesh Tiles_6: 11715018
-      Purple Flesh Tiles_3: 1101959236
+      Pink Flesh Tiles_6: -687950802
+      Pink Flesh Tiles_5: -514398428
+      Pink Flesh Tiles_7: 2017710321
+      Pink Flesh Tiles_8: -651124751
+      Pink Flesh Tiles_0: 241071424
+      Pink Flesh Tiles_3: -721898928
+      Pink Flesh Tiles_4: -1901246903
+      Pink Flesh Tiles_1: 810092458
+      Pink Flesh Tiles_2: 1823231389
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
