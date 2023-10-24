@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: ea033ebcb89cc8a489cba98f29cec47a
+guid: 1dd76d1ab568fc449b0906480f29b8da
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -119,70 +119,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Purple Flesh Tiles_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 1000
-        width: 500
-        height: 500
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3ee55ddf65b2b84469e7264785f30df9
-      internalID: -470796713
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Purple Flesh Tiles_1
-      rect:
-        serializedVersion: 2
-        x: 500
-        y: 1000
-        width: 500
-        height: 500
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7d3b9c0713d3ff844a1f87d2e165ce14
-      internalID: -907405664
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Purple Flesh Tiles_2
-      rect:
-        serializedVersion: 2
-        x: 1000
-        y: 1000
-        width: 500
-        height: 500
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f17a870e686dec84088d901e16df75bd
-      internalID: -1804311108
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Purple Flesh Tiles_3
+      name: Corners_0
       rect:
         serializedVersion: 2
         x: 0
@@ -196,14 +133,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f7b89073d8bc74d49ab7a927741db4a7
-      internalID: 1101959236
+      spriteID: e1e07ed15fbd6c94ab44efc046035d3d
+      internalID: 1255124205
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Purple Flesh Tiles_4
+      name: Corners_1
       rect:
         serializedVersion: 2
         x: 500
@@ -217,35 +154,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2e8967737c01d154ab27d25caee829bb
-      internalID: -2089744595
+      spriteID: 60e9ba8e187648147984041e25cbf185
+      internalID: -656830762
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Purple Flesh Tiles_5
-      rect:
-        serializedVersion: 2
-        x: 1000
-        y: 500
-        width: 500
-        height: 500
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 30199a37cf529c9408f9e17e3e63efc3
-      internalID: 1226263152
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Purple Flesh Tiles_6
+      name: Corners_2
       rect:
         serializedVersion: 2
         x: 0
@@ -259,14 +175,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0fe3b06c1b719374b8234abb4077e34b
-      internalID: 11715018
+      spriteID: 65c68565dca266a419837b086348c058
+      internalID: 1429914648
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Purple Flesh Tiles_7
+      name: Corners_3
       rect:
         serializedVersion: 2
         x: 500
@@ -280,29 +196,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ba8bdcefd4074d841b6de312689120cf
-      internalID: 358234057
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Purple Flesh Tiles_8
-      rect:
-        serializedVersion: 2
-        x: 1000
-        y: 0
-        width: 500
-        height: 500
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5c7f67803c3bd4542bb143d3441a4217
-      internalID: 1707036812
+      spriteID: eee0639bf7449f947b776fbf81c566f4
+      internalID: 726925794
       vertices: []
       indices: 
       edges: []
@@ -318,15 +213,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Purple Flesh Tiles_5: 1226263152
-      Purple Flesh Tiles_8: 1707036812
-      Purple Flesh Tiles_0: -470796713
-      Purple Flesh Tiles_1: -907405664
-      Purple Flesh Tiles_2: -1804311108
-      Purple Flesh Tiles_7: 358234057
-      Purple Flesh Tiles_4: -2089744595
-      Purple Flesh Tiles_6: 11715018
-      Purple Flesh Tiles_3: 1101959236
+      Corners_2: 1429914648
+      Corners_1: -656830762
+      Corners_3: 726925794
+      Corners_0: 1255124205
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
