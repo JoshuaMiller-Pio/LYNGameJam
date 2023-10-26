@@ -24,7 +24,7 @@ public class audioManager : MonoBehaviour
             Destroy(gameObject);
         }
     }
-
+    
     public void PlayPickUp()
     {
 
@@ -48,17 +48,17 @@ public class audioManager : MonoBehaviour
 
     public void PlayMainMenu()
     {
-        _SFXSource.clip = _audio.SFX[0].Sound;
+        _musicSource.clip = _audio.BGMusic[0].Sound;
         _musicSource.Play();
     }
     public void PlayLevel1()
     {
-        _musicSource.clip = _audio.SFX[1].Sound;
+        _musicSource.clip = _audio.BGMusic[1].Sound;
         _musicSource.Play();
     }
     public void PlayWin()
     {
-        _musicSource.clip = _audio.SFX[2].Sound;
+        _musicSource.clip = _audio.BGMusic[2].Sound;
         _musicSource.Play();
     }
 
