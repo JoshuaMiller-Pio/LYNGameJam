@@ -25,26 +25,46 @@ public class audioManager : MonoBehaviour
         }
     }
 
-    public void PlayAchievment()
+    public void PlayPickUp()
     {
 
         _SFXSource.clip = _audio.SFX[0].Sound;
         _SFXSource.Play();
 
     }
-    public void PlayJump()
+    public void PlayQuizFailed()
     {
         _SFXSource.clip = _audio.SFX[1].Sound;
         _SFXSource.Play();
 
     }
-    public void PlayDie()
+    public void PlayQuizSolved()
     {
         _SFXSource.clip = _audio.SFX[2].Sound;
         _SFXSource.Play();
 
 
     }
+
+    public void PlayMainMenu()
+    {
+        _SFXSource.clip = _audio.SFX[0].Sound;
+        _musicSource.Play();
+    }
+    public void PlayLevel1()
+    {
+        _musicSource.clip = _audio.SFX[1].Sound;
+        _musicSource.Play();
+    }
+    public void PlayWin()
+    {
+        _musicSource.clip = _audio.SFX[2].Sound;
+        _musicSource.Play();
+    }
+
+
+
+
     public void ChangeMasterVolume(float val)
     {
         _mixer.SetFloat("Master", (val * 100) - 80);
