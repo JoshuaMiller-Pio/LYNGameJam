@@ -9,34 +9,42 @@ public class PlayerMovement : MonoBehaviour
     Rigidbody2D _playerRig;
     InputAction left,right;
     PlayerInput player;
+   public static Animator animator;
+    SpriteRenderer spriteRenderer;
+    public LayerMask groundLayer; 
+    public float raycastDistance = 0.1f;  
+    private bool isGrounded;
 
-    void Start()
+  
+       
+        void Start()
     {
         _playerRig = GetComponent<Rigidbody2D>();
         player = GetComponent<PlayerInput>();
-
+        animator = GetComponent<Animator>();
         
             left = player.actions["Left"];
             right = player.actions["Right"];
-     
-     
+             spriteRenderer = GetComponent<SpriteRenderer>();
+
     }
 
 
     void Update()
     {
-        
+            StartCoroutine(GroundCheck());
+
     }
 
 
     public  void MoveLeft(InputAction.CallbackContext context)
     {
 
-        Debug.Log("leftinital");
         if (context.performed)
         {
 
             StartCoroutine(IMoveLeft());
+
         }
         
     }
@@ -56,17 +64,33 @@ public class PlayerMovement : MonoBehaviour
 
         }
     }
+    IEnumerator GroundCheck()
+    {
+        isGrounded = Physics2D.Raycast(transform.position, Vector2.down, raycastDistance, groundLayer);
+        if(isGrounded)
+        {
+            isNOTFalling();
+            Debug.Log("grounded");
+        }
+        else
+        {
+            isFalling();
+            Debug.Log("flying");
+        }
 
+        yield return null;
+    }
     IEnumerator IMoveLeft()
     {
 
         while (left.IsPressed())
         {
-            Debug.Log("left");
+            isMoving();
+            spriteRenderer.flipX = true;
             _playerRig.velocity = new Vector2(-1 * Time.deltaTime * 100, _playerRig.velocity.y) ;
             yield return new WaitForSeconds(0.01f);
         }
-
+        isNOTMoving();
         yield return null;
     }
     IEnumerator IMoveRight()
@@ -74,10 +98,45 @@ public class PlayerMovement : MonoBehaviour
 
         while (right.IsPressed())
         {
+            isMoving();
+            spriteRenderer.flipX = false;   
             _playerRig.velocity = new Vector2(1 * Time.deltaTime * 100, _playerRig.velocity.y) ;
             yield return new WaitForSeconds(0.01f);
         }
-
+        isNOTMoving();
         yield return null;
+    }
+
+
+
+
+    //change this to unity events
+    public static void isMoving()
+    {
+        animator.SetBool("isWalking", true);
+        
+    }
+
+    public static void isFalling()
+    {
+        animator.SetBool("isFalling", true);
+    }
+    public static  void isGrappling()
+    {
+        animator.SetBool("isGrappling", true);
+    }
+
+    public static void isNOTMoving()
+    {
+        animator.SetBool("isWalking", false);
+    }
+
+    public static void isNOTFalling()
+    {
+        animator.SetBool("isFalling", false);
+    }
+    public static void isNOTGrappling()
+    {
+        animator.SetBool("isGrappling", false);
     }
 }
