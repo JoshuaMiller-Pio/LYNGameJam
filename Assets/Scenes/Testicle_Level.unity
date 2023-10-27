@@ -33526,6 +33526,10 @@ PrefabInstance:
       propertyPath: questionManager
       value: 
       objectReference: {fileID: 84665638}
+    - target: {fileID: 6176590805002363787, guid: 552e3bb3e68428b47ac1be7c5e5222ed, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6176590805002363797, guid: 552e3bb3e68428b47ac1be7c5e5222ed, type: 3}
       propertyPath: m_camera
       value: 
