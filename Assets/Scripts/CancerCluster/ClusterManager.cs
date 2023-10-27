@@ -22,8 +22,9 @@ public class ClusterManager : MonoBehaviour
             for (int i = 0; i < playerOrbTally.heldOrbs; i++)
             {
                 tumours[i].SetActive(false);
-                if(i >= 6)
+                if(i >= 5)
                 {
+                    Debug.Log("boo");
                     win.gameObject.SetActive(true);
                     Time.timeScale = 0;
                 }

@@ -32969,11 +32969,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6942791806361143190, guid: 479fa8aa4a6c9864eb75f6949ef1ff09, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 31.84788
+      value: 30.92
       objectReference: {fileID: 0}
     - target: {fileID: 6942791806361143190, guid: 479fa8aa4a6c9864eb75f6949ef1ff09, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -23.499247
+      value: -24.79
       objectReference: {fileID: 0}
     - target: {fileID: 6942791806361143190, guid: 479fa8aa4a6c9864eb75f6949ef1ff09, type: 3}
       propertyPath: m_LocalPosition.z
@@ -33040,7 +33040,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 2069440231}
-  playerOrbTally: {fileID: 678072657}
+  playerOrbTally: {fileID: 0}
   tumours:
   - {fileID: 1213807199}
   - {fileID: 1371863180}
@@ -33174,17 +33174,6 @@ PrefabInstance:
       addedObject: {fileID: 519420032}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 552e3bb3e68428b47ac1be7c5e5222ed, type: 3}
---- !u!114 &678072657 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6176590804989374198, guid: 552e3bb3e68428b47ac1be7c5e5222ed, type: 3}
-  m_PrefabInstance: {fileID: 678072656}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2069440231}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 092c8bf98018ffb4cbe3ad79cb455e95, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &681499851
 GameObject:
   m_ObjectHideFlags: 0
