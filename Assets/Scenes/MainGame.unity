@@ -13459,7 +13459,7 @@ GameObject:
   - component: {fileID: 2008716161}
   - component: {fileID: 2008716160}
   - component: {fileID: 2008716159}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14725,6 +14725,14 @@ PrefabInstance:
     - target: {fileID: 6176590804989374191, guid: 552e3bb3e68428b47ac1be7c5e5222ed, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 6176590804989374197, guid: 552e3bb3e68428b47ac1be7c5e5222ed, type: 3}
+      propertyPath: raycastDistance
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6176590804989374197, guid: 552e3bb3e68428b47ac1be7c5e5222ed, type: 3}
+      propertyPath: groundLayer.m_Bits
+      value: 512
       objectReference: {fileID: 0}
     - target: {fileID: 6176590804989374198, guid: 552e3bb3e68428b47ac1be7c5e5222ed, type: 3}
       propertyPath: questionManager

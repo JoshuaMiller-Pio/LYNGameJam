@@ -88,6 +88,7 @@ public class GrapplingGun : MonoBehaviour
         else if (Input.GetKeyUp(KeyCode.Mouse0))
         {
             grappleRope.enabled = false;
+            PlayerMovement.isNOTGrappling();
             m_springJoint2D.enabled = false;
             m_rigidbody.gravityScale = 1;
         }
@@ -126,6 +127,8 @@ public class GrapplingGun : MonoBehaviour
                     grapplePoint = _hit.point;
                     grappleDistanceVector = grapplePoint - (Vector2)gunPivot.position;
                     grappleRope.enabled = true;
+                    PlayerMovement.isGrappling();
+
                 }
             }
         }
