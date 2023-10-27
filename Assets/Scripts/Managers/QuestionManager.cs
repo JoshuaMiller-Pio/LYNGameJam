@@ -13,7 +13,7 @@ public class QuestionManager : MonoBehaviour
     void Start()
     {
         
-        
+        playerOrbTally = player.GetComponent<OrbTally>();
     }
 
     public void TurnOffShield()
