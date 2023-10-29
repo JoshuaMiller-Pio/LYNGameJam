@@ -12,7 +12,7 @@ public class PlayerMovement : MonoBehaviour
     float move;
    public static Animator animator;
     SpriteRenderer spriteRenderer;
-    public LayerMask groundLayer; 
+    public LayerMask groundLayer, groundLayer2; 
     public float raycastDistance = 0.1f;  
     private bool isGrounded;
 
@@ -48,7 +48,7 @@ public class PlayerMovement : MonoBehaviour
         }
         else if(context.canceled)
         {
-            _playerRig.velocity = new Vector2(move * 7f, _playerRig.velocity.y);
+            _playerRig.velocity = new Vector2(0, _playerRig.velocity.y);
 
         }
 
@@ -63,7 +63,7 @@ public class PlayerMovement : MonoBehaviour
         }
         else if (context.canceled)
         {
-            _playerRig.velocity = new Vector2(move * 7f, _playerRig.velocity.y);
+            _playerRig.velocity = new Vector2(0, _playerRig.velocity.y);
 
         }
 
@@ -82,7 +82,7 @@ public class PlayerMovement : MonoBehaviour
     }
     IEnumerator GroundCheck()
     {
-        isGrounded = Physics2D.Raycast(transform.position, Vector2.down, raycastDistance, groundLayer);
+        isGrounded = Physics2D.Raycast(transform.position, Vector2.down, raycastDistance, groundLayer|groundLayer2);
         if (isGrounded)
         {
             isNOTFalling();
