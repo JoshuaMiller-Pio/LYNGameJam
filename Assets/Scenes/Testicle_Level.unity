@@ -33436,6 +33436,16 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 552e3bb3e68428b47ac1be7c5e5222ed, type: 3}
+--- !u!82 &678072657 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 519420033, guid: 552e3bb3e68428b47ac1be7c5e5222ed, type: 3}
+  m_PrefabInstance: {fileID: 678072656}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &678072658 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 519420034, guid: 552e3bb3e68428b47ac1be7c5e5222ed, type: 3}
+  m_PrefabInstance: {fileID: 678072656}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &681499851
 GameObject:
   m_ObjectHideFlags: 0
@@ -44636,8 +44646,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _audio: {fileID: 11400000, guid: fb2bcd987faa9e14a9494ff63d9bf729, type: 2}
   _mixer: {fileID: 24100000, guid: 30f1083e6ce8ef54c8535c618627d1bb, type: 2}
-  _musicSource: {fileID: 0}
-  _SFXSource: {fileID: 0}
+  _musicSource: {fileID: 678072658}
+  _SFXSource: {fileID: 678072657}
 --- !u!1 &1769339054
 GameObject:
   m_ObjectHideFlags: 0

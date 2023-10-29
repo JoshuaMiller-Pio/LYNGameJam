@@ -10,19 +10,12 @@ public class audioManager : MonoBehaviour
     [SerializeField] AudioMixer _mixer;
 
     [SerializeField]
-    private AudioSource _musicSource, _SFXSource;
+    private AudioSource?  _musicSource, _SFXSource;
 
     void Awake()
     {
-        if (Instance == null)
-        {
             Instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
+   
     }
     
     public void PlayPickUp()
@@ -45,6 +38,27 @@ public class audioManager : MonoBehaviour
 
 
     }
+    public void PlayClick()
+    {
+        _SFXSource.clip = _audio.SFX[3].Sound;
+        _SFXSource.Play();
+    } 
+    public void PlayExit()
+    {
+        _SFXSource.clip = _audio.SFX[4].Sound;
+        _SFXSource.Play();
+    }
+    public void PlayQuestion()
+    {
+        _SFXSource.clip = _audio.SFX[5].Sound;
+        _SFXSource.Play();
+    }
+
+
+
+
+
+
 
     public void PlayMainMenu()
     {
