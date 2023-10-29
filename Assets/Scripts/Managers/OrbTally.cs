@@ -16,7 +16,7 @@ public class OrbTally : MonoBehaviour
        
         currentQuestion = 0;
     }
-
+    //hi
     private void OnCollisionEnter2D(Collision2D collision)
     {
         int i = 0;
