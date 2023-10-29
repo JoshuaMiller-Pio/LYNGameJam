@@ -6,6 +6,7 @@ public class OrbTally : MonoBehaviour
 {
     public int heldOrbs, maxOrbs = 6, currentQuestion;
     public QuestionManager questionManager;
+    public GameObject[] orbs = new GameObject[6];
     public GameObject player;
     // Start is called before the first frame update
     void Start()
@@ -27,6 +28,7 @@ public class OrbTally : MonoBehaviour
                 Time.timeScale = 0f;
                 questionManager.qCanvases[i].SetActive(true);
                 currentQuestion = i;
+                questionManager.answeredQuestion[i] = 1;
                     //sound for quiz bubble
             }
             i++;
@@ -37,10 +39,15 @@ public class OrbTally : MonoBehaviour
     {
         if(collision.gameObject.tag == "Orb" && heldOrbs < maxOrbs)
         {
-            heldOrbs++;
-            collision.gameObject.SetActive(false);
-            audioManager.Instance.PlayPickUp();
-            //add pick up here
+            int i = currentQuestion;
+            if(collision.gameObject == orbs[i] && questionManager.answeredQuestion[i] == 1)
+            {
+                heldOrbs++;
+                collision.gameObject.SetActive(false);
+                audioManager.Instance.PlayPickUp();
+                //add pick up here
+            }
+
         }
     }
     // Update is called once per frame
