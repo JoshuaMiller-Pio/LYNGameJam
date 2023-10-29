@@ -48,7 +48,7 @@ public class PlayerMovement : MonoBehaviour
         }
         else if(context.canceled)
         {
-            _playerRig.velocity = new Vector2(move * Time.deltaTime * 300, _playerRig.velocity.y);
+            _playerRig.velocity = new Vector2(move * 7f, _playerRig.velocity.y);
 
         }
 
@@ -63,7 +63,7 @@ public class PlayerMovement : MonoBehaviour
         }
         else if (context.canceled)
         {
-            _playerRig.velocity = new Vector2(move * Time.deltaTime * 300, _playerRig.velocity.y);
+            _playerRig.velocity = new Vector2(move * 7f, _playerRig.velocity.y);
 
         }
 
@@ -72,7 +72,12 @@ public class PlayerMovement : MonoBehaviour
     {
         if (context.performed)
         {
-
+            isGrounded = Physics2D.Raycast(transform.position, Vector2.down, raycastDistance, groundLayer);
+            if (isGrounded)
+            {
+                _playerRig.velocity = new Vector2(_playerRig.velocity.x, 6f);
+                
+            }
         }
     }
     IEnumerator GroundCheck()
@@ -89,6 +94,7 @@ public class PlayerMovement : MonoBehaviour
 
         yield return null;
     }
+  
     IEnumerator IMoveLeft()
     {
 
