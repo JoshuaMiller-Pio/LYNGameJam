@@ -39,14 +39,8 @@ public class PlayerMovement : MonoBehaviour
 
     public  void MoveLeft(InputAction.CallbackContext context)
     {
+        if (context.performed) StartCoroutine(IMoveLeft());
 
-        if (context.performed)
-        {
-
-            StartCoroutine(IMoveLeft());
-
-        }
-        
     }
     public void MoveRight(InputAction.CallbackContext context)
     {
@@ -67,7 +61,7 @@ public class PlayerMovement : MonoBehaviour
     IEnumerator GroundCheck()
     {
         isGrounded = Physics2D.Raycast(transform.position, Vector2.down, raycastDistance, groundLayer);
-        if(isGrounded)
+        if (isGrounded)
         {
             isNOTFalling();
             Debug.Log("grounded");

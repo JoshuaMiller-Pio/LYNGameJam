@@ -27,6 +27,7 @@ public class OrbTally : MonoBehaviour
                 Time.timeScale = 0f;
                 questionManager.qCanvases[i].SetActive(true);
                 currentQuestion = i;
+                    //sound for quiz bubble
             }
             i++;
         }
@@ -38,6 +39,7 @@ public class OrbTally : MonoBehaviour
         {
             heldOrbs++;
             collision.gameObject.SetActive(false);
+            //add pick up here
         }
     }
     // Update is called once per frame
