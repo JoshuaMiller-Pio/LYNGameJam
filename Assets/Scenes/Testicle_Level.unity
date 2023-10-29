@@ -33613,6 +33613,14 @@ PrefabInstance:
       propertyPath: m_Mass
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 6176590804989374185, guid: 552e3bb3e68428b47ac1be7c5e5222ed, type: 3}
+      propertyPath: m_LinearDrag
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6176590804989374185, guid: 552e3bb3e68428b47ac1be7c5e5222ed, type: 3}
+      propertyPath: m_GravityScale
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6176590804989374187, guid: 552e3bb3e68428b47ac1be7c5e5222ed, type: 3}
       propertyPath: m_RootOrder
       value: 9
@@ -33715,7 +33723,7 @@ PrefabInstance:
       objectReference: {fileID: 519420031}
     - target: {fileID: 6176590805002363797, guid: 552e3bb3e68428b47ac1be7c5e5222ed, type: 3}
       propertyPath: hasMaxDistance
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
