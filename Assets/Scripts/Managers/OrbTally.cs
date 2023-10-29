@@ -29,7 +29,9 @@ public class OrbTally : MonoBehaviour
                 questionManager.qCanvases[i].SetActive(true);
                 currentQuestion = i;
                 questionManager.answeredQuestion[i] = 1;
-                    //sound for quiz bubble
+                //sound for quiz bubble
+                audioManager.Instance.PlayQuestion();
+                Debug.Log("question");
             }
             i++;
         }
