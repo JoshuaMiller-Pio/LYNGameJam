@@ -39,6 +39,7 @@ public class OrbTally : MonoBehaviour
         {
             heldOrbs++;
             collision.gameObject.SetActive(false);
+            audioManager.Instance.PlayPickUp();
             //add pick up here
         }
     }

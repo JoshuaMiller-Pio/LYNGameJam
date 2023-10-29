@@ -19,6 +19,8 @@ MonoBehaviour:
     Sound: {fileID: 8300000, guid: eb6adcaadcebd9d49a87f69531ff339e, type: 3}
   - name: Quiz Solved
     Sound: {fileID: 8300000, guid: bcf4b94534a71144a83cba9294f381b2, type: 3}
+  - name: Bubble Interact
+    Sound: {fileID: 8300000, guid: bcf4b94534a71144a83cba9294f381b2, type: 3}
   BGMusic:
   - name: MainMenu
     Sound: {fileID: 8300000, guid: 81c26dc24a927ce419a762cfe6b68c1f, type: 3}
