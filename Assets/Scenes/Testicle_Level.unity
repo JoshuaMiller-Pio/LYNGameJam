@@ -1164,6 +1164,7 @@ MonoBehaviour:
   - {fileID: 1133226001}
   player: {fileID: 2069440231}
   playerOrbTally: {fileID: 0}
+  answeredQuestion: 000000000000000000000000000000000000000000000000
 --- !u!4 &84665639
 Transform:
   m_ObjectHideFlags: 0
@@ -33670,12 +33671,40 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6176590804989374196, guid: 552e3bb3e68428b47ac1be7c5e5222ed, type: 3}
       propertyPath: m_Distance
-      value: 32.599205
+      value: 2.549114
       objectReference: {fileID: 0}
     - target: {fileID: 6176590804989374198, guid: 552e3bb3e68428b47ac1be7c5e5222ed, type: 3}
       propertyPath: questionManager
       value: 
       objectReference: {fileID: 84665638}
+    - target: {fileID: 6176590804989374198, guid: 552e3bb3e68428b47ac1be7c5e5222ed, type: 3}
+      propertyPath: orbs.Array.data[0]
+      value: 
+      objectReference: {fileID: 7185475}
+    - target: {fileID: 6176590804989374198, guid: 552e3bb3e68428b47ac1be7c5e5222ed, type: 3}
+      propertyPath: orbs.Array.data[1]
+      value: 
+      objectReference: {fileID: 539951977}
+    - target: {fileID: 6176590804989374198, guid: 552e3bb3e68428b47ac1be7c5e5222ed, type: 3}
+      propertyPath: orbs.Array.data[2]
+      value: 
+      objectReference: {fileID: 353965661}
+    - target: {fileID: 6176590804989374198, guid: 552e3bb3e68428b47ac1be7c5e5222ed, type: 3}
+      propertyPath: orbs.Array.data[3]
+      value: 
+      objectReference: {fileID: 189594629}
+    - target: {fileID: 6176590804989374198, guid: 552e3bb3e68428b47ac1be7c5e5222ed, type: 3}
+      propertyPath: orbs.Array.data[4]
+      value: 
+      objectReference: {fileID: 1081204735}
+    - target: {fileID: 6176590804989374198, guid: 552e3bb3e68428b47ac1be7c5e5222ed, type: 3}
+      propertyPath: orbs.Array.data[5]
+      value: 
+      objectReference: {fileID: 1453239017}
+    - target: {fileID: 6176590805002363785, guid: 552e3bb3e68428b47ac1be7c5e5222ed, type: 3}
+      propertyPath: m_TagString
+      value: Gun
+      objectReference: {fileID: 0}
     - target: {fileID: 6176590805002363787, guid: 552e3bb3e68428b47ac1be7c5e5222ed, type: 3}
       propertyPath: m_IsTrigger
       value: 1
@@ -34646,7 +34675,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &770713324
 RectTransform:
   m_ObjectHideFlags: 0
