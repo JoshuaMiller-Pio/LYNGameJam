@@ -18,11 +18,11 @@ public class OpenUrl : MonoBehaviour
 
     public void LoveNuts()
     {
-       // Application.OpenURL();
+         Application.OpenURL("https://loveyournuts.org/");
     }
     public void WHO()
     {
-       // Application.OpenURL();
+        Application.OpenURL("https://www.who.int/news-room/fact-sheets/detail/cancer");
 
     }
 }
