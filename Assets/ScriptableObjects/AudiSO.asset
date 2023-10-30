@@ -19,6 +19,12 @@ MonoBehaviour:
     Sound: {fileID: 8300000, guid: eb6adcaadcebd9d49a87f69531ff339e, type: 3}
   - name: Quiz Solved
     Sound: {fileID: 8300000, guid: bcf4b94534a71144a83cba9294f381b2, type: 3}
+  - name: UI Click
+    Sound: {fileID: 8300000, guid: 4a4d0f52b6e6aa44f8c29981fb9bb493, type: 3}
+  - name: Exit
+    Sound: {fileID: 8300000, guid: 5beebb7cb8127c64d8d7d81c0c8adf1b, type: 3}
+  - name: Question
+    Sound: {fileID: 8300000, guid: b28be3f6c42c63a45b8c8e27b5a5cfa5, type: 3}
   BGMusic:
   - name: MainMenu
     Sound: {fileID: 8300000, guid: 81c26dc24a927ce419a762cfe6b68c1f, type: 3}
