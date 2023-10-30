@@ -9,9 +9,10 @@ public class PlayerMovement : MonoBehaviour
     Rigidbody2D _playerRig;
     InputAction left,right;
     PlayerInput player;
+    float move;
    public static Animator animator;
     SpriteRenderer spriteRenderer;
-    public LayerMask groundLayer; 
+    public LayerMask groundLayer, groundLayer2; 
     public float raycastDistance = 0.1f;  
     private bool isGrounded;
 
@@ -33,20 +34,25 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
             StartCoroutine(GroundCheck());
+        move = Input.GetAxisRaw("Horizontal");
+        Debug.Log(Input.GetAxisRaw("Horizontal"));
 
     }
 
 
-    public  void MoveLeft(InputAction.CallbackContext context)
+    public void MoveLeft(InputAction.CallbackContext context)
     {
-
         if (context.performed)
         {
-
             StartCoroutine(IMoveLeft());
+        }
+        else if(context.canceled)
+        {
+            _playerRig.velocity = new Vector2(0, _playerRig.velocity.y);
 
         }
-        
+
+
     }
     public void MoveRight(InputAction.CallbackContext context)
     {
@@ -55,39 +61,50 @@ public class PlayerMovement : MonoBehaviour
 
             StartCoroutine(IMoveRight());
         }
-        
+        else if (context.canceled)
+        {
+            _playerRig.velocity = new Vector2(0, _playerRig.velocity.y);
+
+        }
+
     }
    public void SpecialAction(InputAction.CallbackContext context)
     {
         if (context.performed)
         {
-
+            isGrounded = Physics2D.Raycast(transform.position, Vector2.down, raycastDistance, groundLayer);
+            if (isGrounded)
+            {
+                _playerRig.velocity = new Vector2(_playerRig.velocity.x, 6f);
+                
+            }
         }
     }
     IEnumerator GroundCheck()
     {
-        isGrounded = Physics2D.Raycast(transform.position, Vector2.down, raycastDistance, groundLayer);
-        if(isGrounded)
+        isGrounded = Physics2D.Raycast(transform.position, Vector2.down, raycastDistance, groundLayer|groundLayer2);
+        if (isGrounded)
         {
             isNOTFalling();
-            Debug.Log("grounded");
         }
         else
         {
             isFalling();
-            Debug.Log("flying");
         }
 
         yield return null;
     }
+  
     IEnumerator IMoveLeft()
     {
 
         while (left.IsPressed())
         {
             isMoving();
+
             spriteRenderer.flipX = true;
-            _playerRig.velocity = new Vector2(-1 * Time.deltaTime * 100, _playerRig.velocity.y) ;
+
+            _playerRig.velocity = new Vector2(move * 7f, _playerRig.velocity.y) ;
             yield return new WaitForSeconds(0.01f);
         }
         isNOTMoving();
@@ -99,8 +116,10 @@ public class PlayerMovement : MonoBehaviour
         while (right.IsPressed())
         {
             isMoving();
+
+
             spriteRenderer.flipX = false;   
-            _playerRig.velocity = new Vector2(1 * Time.deltaTime * 100, _playerRig.velocity.y) ;
+            _playerRig.velocity = new Vector2(move * 7f, _playerRig.velocity.y) ;
             yield return new WaitForSeconds(0.01f);
         }
         isNOTMoving();
