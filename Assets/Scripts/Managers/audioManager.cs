@@ -15,9 +15,15 @@ public class audioManager : MonoBehaviour
     void Awake()
     {
             Instance = this;
-   
+        _musicSource.volume = 0.5f;
+        _SFXSource.volume = 0.5f;
     }
     
+    void changeVolume()
+    {
+        _mixer.SetFloat("SFX", -30f);
+        _mixer.SetFloat("Music", -30f);
+    }
     public void PlayPickUp()
     {
 
@@ -86,16 +92,19 @@ public class audioManager : MonoBehaviour
 
     public void ChangeMasterVolume(float val)
     {
-        _mixer.SetFloat("Master", (val * 100) - 80);
+        float convertedVolume = Mathf.Lerp(-65f, 0f, val);
+        _mixer.SetFloat("Master", convertedVolume);
     }
     public void ChangeSFXVolume(float val)
     {
-        _mixer.SetFloat("SFX", (val * 100) - 80);
+        float convertedVolume = Mathf.Lerp(-65f, 0f, val);
+        _mixer.SetFloat("SFX", convertedVolume);
 
     }
     public void ChangeMusicVolume(float val)
     {
-        _mixer.SetFloat("Music", (val * 100) - 80);
+        float convertedVolume = Mathf.Lerp(-65f, 0f, val);
+        _mixer.SetFloat("Music", convertedVolume);
 
     }
 

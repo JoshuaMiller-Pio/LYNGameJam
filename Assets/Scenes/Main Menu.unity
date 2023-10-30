@@ -1117,10 +1117,22 @@ PrefabInstance:
     - target: {fileID: 3417101452057888269, guid: ce25a7811bda2fd4aaf0bc78262b127e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1076593586}
+      objectReference: {fileID: 1076593591}
     - target: {fileID: 3417101452057888269, guid: ce25a7811bda2fd4aaf0bc78262b127e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3417101452057888269, guid: ce25a7811bda2fd4aaf0bc78262b127e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoveNuts
+      objectReference: {fileID: 0}
+    - target: {fileID: 3417101452057888269, guid: ce25a7811bda2fd4aaf0bc78262b127e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: OpenUrl, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3417101452057888269, guid: ce25a7811bda2fd4aaf0bc78262b127e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 4499305533394959996, guid: ce25a7811bda2fd4aaf0bc78262b127e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -1133,10 +1145,22 @@ PrefabInstance:
     - target: {fileID: 4499305533394959996, guid: ce25a7811bda2fd4aaf0bc78262b127e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1076593586}
+      objectReference: {fileID: 1076593591}
     - target: {fileID: 4499305533394959996, guid: ce25a7811bda2fd4aaf0bc78262b127e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4499305533394959996, guid: ce25a7811bda2fd4aaf0bc78262b127e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: WHO
+      objectReference: {fileID: 0}
+    - target: {fileID: 4499305533394959996, guid: ce25a7811bda2fd4aaf0bc78262b127e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: OpenUrl, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4499305533394959996, guid: ce25a7811bda2fd4aaf0bc78262b127e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 5454483888453893092, guid: ce25a7811bda2fd4aaf0bc78262b127e, type: 3}
       propertyPath: m_Name
@@ -2010,7 +2034,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1915120070}
+      - m_Target: {fileID: 1889333308}
         m_TargetAssemblyTypeName: ButtonChecker, Assembly-CSharp
         m_MethodName: nextLevel
         m_Mode: 1
@@ -2218,6 +2242,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1478921374}
   m_CullTransparentMesh: 1
+--- !u!114 &1889333308 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1765690076887062804, guid: 319e554c025ac9540bf05130ad3fe205, type: 3}
+  m_PrefabInstance: {fileID: 582045423}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e60945702ce4b77429e86b7759dbadb6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1962850359
 GameObject:
   m_ObjectHideFlags: 0
@@ -2932,7 +2967,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8382703762901727204, guid: a008e17ec0ae6a4478de7a1b89a888ca, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8382703762901727205, guid: a008e17ec0ae6a4478de7a1b89a888ca, type: 3}
       propertyPath: m_Pivot.x
