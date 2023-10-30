@@ -53,6 +53,11 @@ public class audioManager : MonoBehaviour
         _SFXSource.clip = _audio.SFX[5].Sound;
         _SFXSource.Play();
     }
+    public void PlayLevelSelected()
+    {
+        _SFXSource.clip = _audio.SFX[6].Sound;
+        _SFXSource.Play();
+    }
 
 
 

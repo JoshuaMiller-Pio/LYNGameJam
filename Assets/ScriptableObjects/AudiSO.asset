@@ -25,6 +25,8 @@ MonoBehaviour:
     Sound: {fileID: 8300000, guid: 5beebb7cb8127c64d8d7d81c0c8adf1b, type: 3}
   - name: Question
     Sound: {fileID: 8300000, guid: b28be3f6c42c63a45b8c8e27b5a5cfa5, type: 3}
+  - name: LevelSelected
+    Sound: {fileID: 8300000, guid: dbde38caa9a98d840a4a5ca949d66e40, type: 3}
   BGMusic:
   - name: MainMenu
     Sound: {fileID: 8300000, guid: 81c26dc24a927ce419a762cfe6b68c1f, type: 3}
