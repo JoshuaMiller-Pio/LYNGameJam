@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Main Menu.unity
     guid: 93a3c44ccf85b054bb2940b4282cadfd
   - enabled: 1
+    path: Assets/Scenes/LevelSelect.unity
+    guid: 739da5d5e076c3843a3cfe4f30ac0f31
+  - enabled: 1
     path: Assets/Scenes/Testicle_Level.unity
     guid: 24575700602d31d49a5fcdd48114e034
   m_configObjects: {}
