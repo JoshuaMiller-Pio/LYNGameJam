@@ -722,9 +722,9 @@ RectTransform:
   - {fileID: 1445840379}
   - {fileID: 1261331417}
   - {fileID: 382647177}
-  - {fileID: 53602541}
   - {fileID: 1256683053}
   - {fileID: 1478921375}
+  - {fileID: 53602541}
   - {fileID: 891522251}
   - {fileID: 1354278638}
   m_Father: {fileID: 0}
@@ -1714,6 +1714,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 870928827}
     m_Modifications:
+    - target: {fileID: 809266591588887317, guid: ce25a7811bda2fd4aaf0bc78262b127e, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -3.7480469
+      objectReference: {fileID: 0}
     - target: {fileID: 5454483888453893092, guid: ce25a7811bda2fd4aaf0bc78262b127e, type: 3}
       propertyPath: m_Name
       value: About
@@ -1809,6 +1813,10 @@ PrefabInstance:
     - target: {fileID: 5454483888453893113, guid: ce25a7811bda2fd4aaf0bc78262b127e, type: 3}
       propertyPath: m_PresetInfoIsWorld
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5454483888488504101, guid: ce25a7811bda2fd4aaf0bc78262b127e, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -9.33252
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
